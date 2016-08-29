@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		1E39EFA01D73ECAB0039959E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E39EF9F1D73ECAB0039959E /* main.m */; };
 		1E39EFA31D73ECAB0039959E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E39EFA21D73ECAB0039959E /* AppDelegate.m */; };
-		1E39EFA61D73ECAB0039959E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E39EFA51D73ECAB0039959E /* ViewController.m */; };
-		1E39EFA91D73ECAB0039959E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E39EFA71D73ECAB0039959E /* Main.storyboard */; };
 		1E39EFAB1D73ECAB0039959E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E39EFAA1D73ECAB0039959E /* Assets.xcassets */; };
-		1E39EFAE1D73ECAB0039959E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E39EFAC1D73ECAB0039959E /* LaunchScreen.storyboard */; };
+		1E39EFB61D73ED370039959E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E39EFB51D73ED370039959E /* LaunchScreen.xib */; };
+		1E39EFB91D73EDD00039959E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E39EFB81D73EDD00039959E /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +19,11 @@
 		1E39EF9F1D73ECAB0039959E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E39EFA11D73ECAB0039959E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1E39EFA21D73ECAB0039959E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1E39EFA41D73ECAB0039959E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1E39EFA51D73ECAB0039959E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1E39EFA81D73ECAB0039959E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E39EFAA1D73ECAB0039959E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1E39EFAD1D73ECAB0039959E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E39EFAF1D73ECAB0039959E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E39EFB51D73ED370039959E /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		1E39EFB71D73EDD00039959E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1E39EFB81D73EDD00039959E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +58,8 @@
 			children = (
 				1E39EFA11D73ECAB0039959E /* AppDelegate.h */,
 				1E39EFA21D73ECAB0039959E /* AppDelegate.m */,
-				1E39EFA41D73ECAB0039959E /* ViewController.h */,
-				1E39EFA51D73ECAB0039959E /* ViewController.m */,
-				1E39EFA71D73ECAB0039959E /* Main.storyboard */,
-				1E39EFAA1D73ECAB0039959E /* Assets.xcassets */,
-				1E39EFAC1D73ECAB0039959E /* LaunchScreen.storyboard */,
-				1E39EFAF1D73ECAB0039959E /* Info.plist */,
+				1E39EFB71D73EDD00039959E /* RootViewController.h */,
+				1E39EFB81D73EDD00039959E /* RootViewController.m */,
 				1E39EF9E1D73ECAB0039959E /* Supporting Files */,
 			);
 			path = CocoaDemo;
@@ -74,7 +68,10 @@
 		1E39EF9E1D73ECAB0039959E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E39EFAF1D73ECAB0039959E /* Info.plist */,
+				1E39EFAA1D73ECAB0039959E /* Assets.xcassets */,
 				1E39EF9F1D73ECAB0039959E /* main.m */,
+				1E39EFB51D73ED370039959E /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -136,9 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E39EFAE1D73ECAB0039959E /* LaunchScreen.storyboard in Resources */,
+				1E39EFB61D73ED370039959E /* LaunchScreen.xib in Resources */,
 				1E39EFAB1D73ECAB0039959E /* Assets.xcassets in Resources */,
-				1E39EFA91D73ECAB0039959E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,32 +145,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E39EFA61D73ECAB0039959E /* ViewController.m in Sources */,
 				1E39EFA31D73ECAB0039959E /* AppDelegate.m in Sources */,
 				1E39EFA01D73ECAB0039959E /* main.m in Sources */,
+				1E39EFB91D73EDD00039959E /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1E39EFA71D73ECAB0039959E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E39EFA81D73ECAB0039959E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1E39EFAC1D73ECAB0039959E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E39EFAD1D73ECAB0039959E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1E39EFB01D73ECAB0039959E /* Debug */ = {
@@ -265,7 +242,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CocoaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CocoaKC.CocoaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +255,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CocoaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CocoaKC.CocoaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +283,7 @@
 				1E39EFB41D73ECAB0039959E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
