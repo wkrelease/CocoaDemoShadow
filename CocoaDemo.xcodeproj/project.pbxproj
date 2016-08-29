@@ -12,6 +12,7 @@
 		1E39EFAB1D73ECAB0039959E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E39EFAA1D73ECAB0039959E /* Assets.xcassets */; };
 		1E39EFB61D73ED370039959E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E39EFB51D73ED370039959E /* LaunchScreen.xib */; };
 		1E39EFB91D73EDD00039959E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E39EFB81D73EDD00039959E /* RootViewController.m */; };
+		1E6860391D741E3000B9BE48 /* MessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6860381D741E3000B9BE48 /* MessViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		1E39EFB51D73ED370039959E /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		1E39EFB71D73EDD00039959E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		1E39EFB81D73EDD00039959E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		1E6860371D741E3000B9BE48 /* MessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessViewController.h; sourceTree = "<group>"; };
+		1E6860381D741E3000B9BE48 /* MessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 				1E39EFA21D73ECAB0039959E /* AppDelegate.m */,
 				1E39EFB71D73EDD00039959E /* RootViewController.h */,
 				1E39EFB81D73EDD00039959E /* RootViewController.m */,
+				1E6860371D741E3000B9BE48 /* MessViewController.h */,
+				1E6860381D741E3000B9BE48 /* MessViewController.m */,
 				1E39EF9E1D73ECAB0039959E /* Supporting Files */,
 			);
 			path = CocoaDemo;
@@ -147,6 +152,7 @@
 			files = (
 				1E39EFA31D73ECAB0039959E /* AppDelegate.m in Sources */,
 				1E39EFA01D73ECAB0039959E /* main.m in Sources */,
+				1E6860391D741E3000B9BE48 /* MessViewController.m in Sources */,
 				1E39EFB91D73EDD00039959E /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
