@@ -22,7 +22,16 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    [self createRoot];
 
+}
+
+- (void)createRoot {
+    
+    MessViewController *mess = [[MessViewController alloc]init];
+    [self.navigationController pushViewController:mess animated:YES];
+    
 }
 
 @end
