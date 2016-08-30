@@ -7,6 +7,7 @@
 //
 
 #import "MessViewController.h"
+#import "GoodsView.h"
 
 @interface MessViewController ()
 
@@ -23,6 +24,9 @@
     
     self.view.backgroundColor = [UIColor grayColor];
     
+    GoodsView *good = [GoodsView shareView];
+    good.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:good];
     
 }
 
