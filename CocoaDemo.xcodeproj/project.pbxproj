@@ -14,8 +14,6 @@
 		1E39EFB91D73EDD00039959E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E39EFB81D73EDD00039959E /* RootViewController.m */; };
 		1E6860391D741E3000B9BE48 /* MessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6860381D741E3000B9BE48 /* MessViewController.m */; };
 		1E6860411D74581400B9BE48 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6860401D74581400B9BE48 /* FirstViewController.m */; };
-		1E6860441D75150800B9BE48 /* GoodsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6860431D75150800B9BE48 /* GoodsView.m */; };
-		1E6860461D75151700B9BE48 /* GoodsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E6860451D75151700B9BE48 /* GoodsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +30,6 @@
 		1E6860381D741E3000B9BE48 /* MessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessViewController.m; sourceTree = "<group>"; };
 		1E68603F1D74581400B9BE48 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		1E6860401D74581400B9BE48 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		1E6860421D75150800B9BE48 /* GoodsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsView.h; sourceTree = "<group>"; };
-		1E6860431D75150800B9BE48 /* GoodsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsView.m; sourceTree = "<group>"; };
-		1E6860451D75151700B9BE48 /* GoodsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +70,6 @@
 				1E6860381D741E3000B9BE48 /* MessViewController.m */,
 				1E68603F1D74581400B9BE48 /* FirstViewController.h */,
 				1E6860401D74581400B9BE48 /* FirstViewController.m */,
-				1E6860421D75150800B9BE48 /* GoodsView.h */,
-				1E6860431D75150800B9BE48 /* GoodsView.m */,
-				1E6860451D75151700B9BE48 /* GoodsView.xib */,
 				1E39EF9E1D73ECAB0039959E /* Supporting Files */,
 			);
 			path = CocoaDemo;
@@ -152,7 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E39EFB61D73ED370039959E /* LaunchScreen.xib in Resources */,
-				1E6860461D75151700B9BE48 /* GoodsView.xib in Resources */,
 				1E39EFAB1D73ECAB0039959E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +156,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E39EFA31D73ECAB0039959E /* AppDelegate.m in Sources */,
-				1E6860441D75150800B9BE48 /* GoodsView.m in Sources */,
 				1E39EFA01D73ECAB0039959E /* main.m in Sources */,
 				1E6860411D74581400B9BE48 /* FirstViewController.m in Sources */,
 				1E6860391D741E3000B9BE48 /* MessViewController.m in Sources */,
