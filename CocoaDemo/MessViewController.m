@@ -29,6 +29,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
     [self setupMess];
+    [self req];
     
 }
 
@@ -40,6 +41,15 @@
     NSArray *array = @[@"name", @"w", @"aa", @"zxp", @"aa"]; //返回的是一个新的数组
     NSArray *newArray = [array valueForKeyPath:@"@distinctUnionOfObjects.self"];
     NSLog(@"%@", newArray);
+    
+}
+
+#pragma mark - RequestData
+
+- (void)req{
+    
+    
+    
     
 }
 
