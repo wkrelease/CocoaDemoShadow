@@ -7,12 +7,11 @@
 //
 
 #import "RootViewController.h"
-#import "MessViewController.h"
 
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong ,nonatomic) UITableView *tableView;
-@property (strong ,nonatomic) NSMutableArray *dataArray;
+@property (strong ,nonatomic) NSArray *dataArray;
 
 @end
 
@@ -28,9 +27,8 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
+    _dataArray = @[@"MessViewController",@"AViewController",@"BViewController",@"CViewController",@"DViewController"];
     
-
-
 }
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource
@@ -59,6 +57,7 @@
     
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     cell.accessoryType = 1;
+    cell.textLabel.text = _dataArray[indexPath.row];
     return cell;
     
 }
@@ -72,27 +71,9 @@
 
 - (void)pushAnimationView:(NSInteger)index{
     
-    switch (index) {
-        case 0:
-        {
-            MessViewController *mess = [[MessViewController alloc]init];
-            [self.navigationController pushViewController:mess animated:YES];
-        }
-            break;
-        case 1:
-        {
-            
-        }
-            break;
-        case 2:
-        {
-            
-        }
-            break;
-        default:
-            break;
-    }
-    
+    Class class = NSClassFromString(_dataArray[index]);
+    UIViewController *controller = [[class alloc]init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end
