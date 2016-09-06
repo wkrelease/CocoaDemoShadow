@@ -48,8 +48,14 @@
 
 - (void)req{
     
+    CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(handleDisplayLink:)];
+    [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     
+}
+
+- (void)handleDisplayLink:(CADisplayLink *)link{
     
+    NSLog(@"11111 --- %f",link.duration);
     
 }
 
