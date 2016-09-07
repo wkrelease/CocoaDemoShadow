@@ -8,6 +8,18 @@
 
 #import "RootViewController.h"
 
+typedef NS_OPTIONS(NSUInteger, MyOption){
+    
+    MyOptionNone = 0,
+    MyOption1 = 1 << 0, // 1
+    MyOption2 = 1 << 1, // 2
+    MyOption3 = 1 << 2, // 4
+    MyOption4 = 1 << 3, // 8
+    MyOption5 = 1 << 4, // 16
+    
+};
+
+
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong ,nonatomic) UITableView *tableView;
@@ -17,10 +29,36 @@
 
 @implementation RootViewController
 
+- (void)de{
+
+    NSError *error = nil;
+    
+}
+
+
 #pragma mark - LifeCycle
 
 - (void)viewDidLoad {
  
+    MyOption option = MyOption1 | MyOption2;
+
+    NSLog(@"%lu",(unsigned long)option);
+    
+    if (option & MyOption1) {
+        NSLog(@"1");
+    }else{
+        NSLog(@"0");
+    }
+    
+    option = option | MyOption3;
+    
+    NSLog(@"%lu",option);
+
+    option = option & (~MyOption3);
+    
+    NSLog(@"%lu",option);
+    
+    
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];

@@ -22,6 +22,7 @@
  http://ronnqvi.st/controlling-animation-timing/
  
  另外工作上也有一些：企业邮箱、禅道、quip、dingding、sourcetree
+ 扩展技能php、sketch、h5
  
  *
  *
