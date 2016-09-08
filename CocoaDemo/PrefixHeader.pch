@@ -14,5 +14,7 @@
 
 #import "UIView+Animation.h"
 
+#import "JHChainableAnimations.h"
+
 
 #endif /* PrefixHeader_pch */
