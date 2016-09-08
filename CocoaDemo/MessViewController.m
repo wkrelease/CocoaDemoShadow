@@ -29,7 +29,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
     [self setupMess];
-    [self req];
+//    [self req];
     
 }
 

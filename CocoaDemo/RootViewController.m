@@ -29,13 +29,6 @@ typedef NS_OPTIONS(NSUInteger, MyOption){
 
 @implementation RootViewController
 
-- (void)de{
-
-    NSError *error = nil;
-    
-}
-
-
 #pragma mark - LifeCycle
 
 - (void)viewDidLoad {

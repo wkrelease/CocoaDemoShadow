@@ -22,12 +22,21 @@
  http://ronnqvi.st/controlling-animation-timing/
  
  另外工作上也有一些：企业邮箱、禅道、quip、dingding、sourcetree
+ 
  扩展技能php、sketch、h5
+ 
  
  *
  *
  *这个demo索性就用来演示ios中的动画吧
  *
+ 
+                CABasicAnimation
+                CATransition
+ CAAnimation    CAKeyframeAnimation
+                CASpringAnimation
+                CAAnimationGroup
+ 
  *
  **/
 
