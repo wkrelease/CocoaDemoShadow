@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "MessViewController.h"
+#import "FirstViewController.h"
 
 @interface RootViewController ()
 
@@ -29,8 +30,22 @@
 
 - (void)createRoot {
     
-    MessViewController *mess = [[MessViewController alloc]init];
-    [self.navigationController pushViewController:mess animated:YES];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"push" forState:UIControlStateNormal];
+    btn.frame = CGRectMake(100, 100, 100, 100);
+    btn.backgroundColor =  [UIColor cyanColor];
+    [btn addTarget:self action:@selector(btnClick)forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+//    MessViewController *mess = [[MessViewController alloc]init];
+//    [self.navigationController pushViewController:mess animated:YES];
+    
+}
+
+- (void)btnClick {
+    
+    FirstViewController *first = [[FirstViewController alloc]init];
+    [self.navigationController pushViewController:first animated:YES];
     
 }
 
